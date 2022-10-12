@@ -39,6 +39,8 @@ public class WidgetsActvity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_widgets_actvity);
 
+        setTitle("Widgets");
+
         myButton = findViewById(R.id.btn_buton);
         seekBar = findViewById(R.id.seek_bar);
         textView = findViewById(R.id.text_view);

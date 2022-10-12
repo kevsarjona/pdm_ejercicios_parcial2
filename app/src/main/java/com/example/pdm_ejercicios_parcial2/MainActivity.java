@@ -12,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnWidgets;
     Button btnAdvancedWidgets;
+    Button btnDrawer;
 
 
     @Override
@@ -21,6 +22,9 @@ public class MainActivity extends AppCompatActivity {
 
         btnWidgets = findViewById(R.id.btn_elements);
         btnAdvancedWidgets = findViewById(R.id.btn_advanced_elements);
+        btnDrawer = findViewById(R.id.btn_drawer);
+
+        setTitle("Menu Buttons");
 
         btnWidgets.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +38,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, AdvancedWidgetsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnDrawer.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, DrawerActivity.class);
                 startActivity(intent);
             }
         });

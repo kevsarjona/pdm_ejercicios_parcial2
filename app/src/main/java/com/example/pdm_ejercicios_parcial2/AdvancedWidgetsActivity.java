@@ -22,7 +22,7 @@ public class AdvancedWidgetsActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
 
-        setTitle("Mi titulo");
+        setTitle("Advanced Widgets");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setHomeAsUpIndicator(R.drawable.ic_baseline_menu_24);
 
